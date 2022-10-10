@@ -11,3 +11,23 @@ function outputTableBody() {
       outputCartRow(item, total);
    }
 }
+
+function outputSubTotal() {
+   const row = `<tr class="totals">
+   <td colspan="4">Subtotal</td>
+   <td>\$${calcSubTotal()}</td>
+</tr>`;
+   document.write(row);
+}
+
+function outputTax() {
+   document.write("\$" + calcTax());
+}
+
+function outputShipping() {
+   document.write("\$" + calcShipping());
+}
+
+function outputGrandTotal() {
+   document.write("\$" + calcGrandTotal());
+}

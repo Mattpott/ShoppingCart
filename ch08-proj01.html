@@ -23,21 +23,19 @@
     </thead>
     <tbody>
         <script>outputTableBody()</script>
-        <tr class="totals">
-            <td colspan="4">Subtotal</td>
-            <td>$550.00</td>
-        </tr>
+        <script>outputSubTotal()</script>
+        
         <tr class="totals">
             <td colspan="4">Tax</td>
-            <td>$55.00</td>
+            <td><script>outputTax()</script></td>
         </tr>
         <tr class="totals">
             <td colspan="4">Shipping</td>
-            <td>$0.00</td>
+            <td><script>outputShipping()</script></td>
         </tr>
         <tr class="totals">
             <td colspan="4" class="focus">Grand Total</td>
-            <td class="focus">$605.00</td>
+            <td class="focus"><script>outputGrandTotal()</script></td>
         </tr>
     </tbody>
 </table>

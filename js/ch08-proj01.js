@@ -13,11 +13,7 @@ function outputTableBody() {
 }
 
 function outputSubTotal() {
-   const row = `<tr class="totals">
-   <td colspan="4">Subtotal</td>
-   <td>\$${calcSubTotal()}</td>
-</tr>`;
-   document.write(row);
+   document.write("\$" + calcSubTotal());
 }
 
 function outputTax() {

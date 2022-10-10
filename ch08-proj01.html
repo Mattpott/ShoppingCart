@@ -23,8 +23,10 @@
     </thead>
     <tbody>
         <script>outputTableBody()</script>
-        <script>outputSubTotal()</script>
-        
+        <tr class="totals">
+            <td colspan="4">Subtotal</td>
+            <td><script>outputSubTotal()</script></td>
+         </tr>
         <tr class="totals">
             <td colspan="4">Tax</td>
             <td><script>outputTax()</script></td>
